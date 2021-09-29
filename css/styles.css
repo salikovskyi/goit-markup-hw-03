@@ -1,10 +1,6 @@
 /*   colour  blue #2196F3   our team bgc #F5F4FA 
     bgc dark #2F303A    text colour #212121  
       text colour2  #757575    */
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   color: #757575;
@@ -44,13 +40,36 @@ html {
   box-sizing: inherit;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
 /*============HEADER==============*/
 
 header {
   display: flex;
   align-items: baseline;
   padding: 32px 0px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 nav ul {
@@ -71,6 +90,10 @@ nav ul {
   font-family: 'Raleway', sans-serif;
 }
 
+nav li {
+  margin-left: 50px;
+}
+
 .link {
   color: #212121;
   text-decoration: none;
@@ -78,7 +101,6 @@ nav ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
-  margin-left: 50px;
 }
 
 .link.current {
@@ -97,6 +119,9 @@ nav ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
+}
+
+.contact-info li:not(:first-child) {
   margin-left: 50px;
 }
 
@@ -114,7 +139,7 @@ nav ul {
   background-color: #2f303a;
 }
 
-.headline {
+.hero-title {
   color: #ffffff;
   font-size: 44px;
   line-height: 1.36;
@@ -180,7 +205,6 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: 50px;
 }
 
 .services-link {
@@ -192,12 +216,13 @@ nav ul {
   --grid-item: 3;
 }
 
-.caption {
+.title {
   color: #212121;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .services {
@@ -212,19 +237,21 @@ nav ul {
   background-color: #f5f4fa;
 }
 
-.team-roster {
+.team-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .team-link {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 .team-link {
-  --grid-item: 5;
+  --grid-item: 4;
 }
 
 .team-link {
@@ -232,7 +259,6 @@ nav ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
-  margin-top: 50px;
 }
 
 .name {
@@ -320,9 +346,10 @@ address {
 
 .portfolio-button {
   color: #212121;
+  padding: 0;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.63px;
   letter-spacing: 0.03em;
   background: #f5f4fa;
   border-radius: 4px;
@@ -339,9 +366,12 @@ address {
   color: #ffffff;
 }
 
+.button-section li {
+  margin-left: 8px;
+}
+
 .portfolio-button {
   flex-basis: calc((100% - 8px * var(--grid-item)) / var(--grid-item));
-  margin-left: 8px;
 }
 
 .portfolio-button {
@@ -364,29 +394,29 @@ address {
 }
 
 .photo-section li {
-  --grid-item: 9;
+  --grid-item: 3;
 }
 
-.portfolio-caption {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  padding-left: 24px;
 }
 
-.portfolio-note {
+.portfolio-subtitle {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  padding-left: 24px;
+  margin-top: 4px;
 }
 
 .photo-section-description {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .photo-section-img {
