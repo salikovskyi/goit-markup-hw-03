@@ -59,8 +59,13 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 /*============HEADER==============*/
@@ -90,7 +95,11 @@ nav ul {
   font-family: 'Raleway', sans-serif;
 }
 
-nav li {
+nav li:not(:first-child) {
+  margin-left: 50px;
+}
+
+nav {
   margin-left: 50px;
 }
 
@@ -226,7 +235,7 @@ nav li {
 }
 
 .services {
-  padding-bottom: 94px;
+  padding-top: ;
 }
 
 /*============CLOSE===SERVICES==============*/
@@ -267,16 +276,18 @@ nav li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: 500;
-  text-align: center;
-  margin: 30px auto 10px auto;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.team-list-description {
+  padding-bottom: 30px;
+  padding-top: 30px;
   text-align: center;
-  margin: 10px auto 30px auto;
 }
 
 /*============CLOSE===TEAM==============*/
@@ -308,7 +319,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 20px;
+  margin: 20px 0 9px 0;
 }
 
 .ft-contact {
@@ -317,9 +328,11 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 9px;
 }
 
+.footer-list li:not(:first-child) {
+  margin-top: 9px;
+}
 .ft-contact:hover,
 .ft-contact:focus {
   color: #2196f3;
@@ -403,13 +416,13 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .portfolio-subtitle {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin-top: 4px;
 }
 
 .photo-section-description {
