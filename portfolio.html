@@ -14,23 +14,23 @@
 </head>
 <body>
 
-        <header class="">
+        <header class="header">
             <div class="container header-right-side">
         
                 <a href="index.html" class="logo"><span>Web</span>Studio</a>
         
-                <nav>
+                <nav class="nav">
                     <ul class="list">
-                        <li><a href="index.html" class="link">Студия</a></li>
-                        <li><a href="portfolio.html" class="link current">Портфолио</a></li>
-                        <li><a href="#" class="link">Контакты</a></li>
+                        <li class="navigation-item"><a href="index.html" class="link">Студия</a></li>
+                        <li class="navigation-item"><a href="portfolio.html" class="link current">Портфолио</a></li>
+                        <li class="navigation-item"><a href="#" class="link">Контакты</a></li>
                     </ul>
                 </nav>
         
         
                 <ul class="contact-info list">
-                    <li><a href="#" class="contact">info@devstudio.com</a></li>
-                    <li><a href="#" class="contact">+38 096 111 11 11</a></li>
+                    <li class="contact-info-item"><a href="#" class="contact">info@devstudio.com</a></li>
+                    <li class="contact-info-item"><a href="#" class="contact">+38 096 111 11 11</a></li>
                 </ul>
             </div>
         
@@ -40,29 +40,30 @@
 
 
         <!-- /*============BUTTON_SECTION==============*/ -->
-
+        
         <section class="section">
+            <div class="container">
             <h1 class="visually-hidden">Портфолио</h1>
 
             <ul class="button-section list">
             
-                <li>
+                <li class="button-section-item">
                     <button type="button" class="portfolio-button">Все</button>
                 </li>
             
-                <li>
+                <li class="button-section-item">
                     <button type="button" class="portfolio-button">Веб сайты</button>
                 </li>
             
-                <li>
+                <li class="button-section-item">
                     <button type="button" class="portfolio-button">Приложения</button>
                 </li>
             
-                <li>
+                <li class="button-section-item">
                     <button type="button" class="portfolio-button">Дизайн</button>
                 </li>
             
-                <li>
+                <li class="button-section-item">
                     <button type="button" class="portfolio-button">Маркетинг</button>
                 </li>
             
@@ -71,9 +72,9 @@
             
             <!-- /*============PHOTO-SECTION==============*/ -->
             
-            <div class="container">
+            
                 <ul class="photo-section list">
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg1.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Технокряк</h2>
@@ -82,7 +83,7 @@
                             
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg2.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
@@ -91,7 +92,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg3.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Ресторан Seafood</h2>
@@ -100,7 +101,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg4.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Проект Prime</h2>
@@ -109,7 +110,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg5.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Проект Boxes</h2>
@@ -118,7 +119,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg6.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Inspiration has no Borders</h2>
@@ -127,7 +128,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg7.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Издание Limited Edition</h2>
@@ -136,7 +137,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg8.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Проект LAB</h2>
@@ -145,7 +146,7 @@
                         
                     </li>
             
-                    <li>
+                    <li class="photo-section-item">
                         <img src="images/pimg9.jpg" alt="" class="photo-section-img">
                         <div class="photo-section-description">
                             <h2 class="portfolio-title">Growing Business</h2>
@@ -154,8 +155,8 @@
                             
                     </li>
                 </ul>
-            </div>
-        </section>
+        </div>   
+    </section> 
        
 
     </main>
@@ -165,10 +166,10 @@
             <a href="index.html" class="footer-logo"><span>Web</span>Studio</a>
     
             <address>
-                <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
                 <ul class="footer-list list">
-                    <li><a href="#" class="ft-contact">info@example.com</a></li>
-                    <li><a href="#" class="ft-contact">+38 099 111 11 11</a></li>
+                    <li class="footer-list-item"><p class="location">г. Киев, пр-т Леси Украинки, 26</p></li>
+                    <li class="footer-list-item"><a href="#" class="ft-contact">info@example.com</a></li>
+                    <li class="footer-list-item"><a href="#" class="ft-contact">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>
