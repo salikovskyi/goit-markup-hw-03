@@ -81,9 +81,9 @@ p:last-child {
   display: flex;
 }
 
-.header-right-side {
+.header-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .logo {
@@ -155,6 +155,7 @@ p:last-child {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-button {
@@ -223,7 +224,7 @@ p:last-child {
   --grid-item: 3;
 }
 
-.title {
+.section-title {
   color: #212121;
   font-size: 36px;
   line-height: 1.17;
@@ -250,17 +251,17 @@ p:last-child {
   margin-top: -30px;
 }
 
-.team-link {
+.team-item {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.team-link {
+.team-item {
   --grid-item: 4;
 }
 
-.team-link {
+.team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -291,8 +292,7 @@ p:last-child {
 
 footer {
   background-color: #2f303a;
-  height: 252px;
-  padding-top: 60px;
+  padding: 60px 0 60px 0;
 }
 
 .footer-logo {
@@ -343,9 +343,12 @@ address {
 .button-section {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
   margin-bottom: 50px;
   justify-content: center;
+}
+
+.button-section-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-button {
@@ -380,22 +383,22 @@ address {
   --grid-item: 5;
 } /*
 
-/*PHOTO SECTION*/
+/*gallery SECTION*/
 
-.photo-section {
+.gallery-section {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.photo-section-item {
+.gallery-section-item {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.photo-section-item {
+.gallery-section-item {
   --grid-item: 3;
 }
 
@@ -413,9 +416,18 @@ address {
   line-height: 1.875;
 }
 
-.photo-section-description {
+.gallery-section-description {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+
+.gallery-section-link {
+  text-decoration: none;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
